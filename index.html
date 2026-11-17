@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        #map {
+            width: 922px;
+            height: 587px;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+<script src="resources/proj4.js"></script>
+        <script>proj4.defs('EPSG:32719','+proj=utm +zone=19 +south +datum=WGS84 +units=m +no_defs');</script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/photon-geocoder-autocomplete.min.js"></script>
+        <script src="resources/olms.js"></script>
+        <script src="layers/CanterasQuillota_2.js"></script><script src="layers/yacimientosminerosaridos_3.js"></script><script src="layers/yacimientosmineroscanteras_4.js"></script><script src="layers/Concesionescolindantes_5.js"></script><script src="layers/AsociacindePueblosOriginariosdeQuillota_6.js"></script><script src="layers/AsociacinMapucheNewen_7.js"></script><script src="layers/radio30kmplantas_8.js"></script><script src="layers/radio15kmplantas_9.js"></script><script src="layers/radio3kmplantas_10.js"></script><script src="layers/NuevaPlantaBSA_11.js"></script><script src="layers/PlantaAggPtreosAconcagua_12.js"></script><script src="layers/PlantaBSA_13.js"></script><script src="layers/localidades_14.js"></script><script src="layers/Comunasdelpoligono_15.js"></script><script src="layers/PREMVALPREDIO50_16.js"></script><script src="layers/PRC7COMUNAS_17.js"></script><script src="layers/Uv_comunasdelproyecto_18.js"></script><script src="layers/CCU20237COMUNAS_19.js"></script><script src="layers/redvialproyecto_20.js"></script><script src="layers/LU7COMUNAS_21.js"></script><script src="layers/Uesgeomorfologicascomunas_22.js"></script><script src="layers/mapageologicocomunas_23.js"></script><script src="layers/Esteros_24.js"></script><script src="layers/CURSORIOACONCAGUA_25.js"></script><script src="layers/HumedalesUrbanosMMA2025_26.js"></script><script src="layers/Sitiosprioritarios2021proyecto_27.js"></script><script src="layers/PoligonosfinalesdePolpaico_28.js"></script><script src="layers/PrediosfinalesdePolpaico_29.js"></script>
+        <script src="styles/CanterasQuillota_2_style.js"></script><script src="styles/yacimientosminerosaridos_3_style.js"></script><script src="styles/yacimientosmineroscanteras_4_style.js"></script><script src="styles/Concesionescolindantes_5_style.js"></script><script src="styles/AsociacindePueblosOriginariosdeQuillota_6_style.js"></script><script src="styles/AsociacinMapucheNewen_7_style.js"></script><script src="styles/radio30kmplantas_8_style.js"></script><script src="styles/radio15kmplantas_9_style.js"></script><script src="styles/radio3kmplantas_10_style.js"></script><script src="styles/NuevaPlantaBSA_11_style.js"></script><script src="styles/PlantaAggPtreosAconcagua_12_style.js"></script><script src="styles/PlantaBSA_13_style.js"></script><script src="styles/localidades_14_style.js"></script><script src="styles/Comunasdelpoligono_15_style.js"></script><script src="styles/PREMVALPREDIO50_16_style.js"></script><script src="styles/PRC7COMUNAS_17_style.js"></script><script src="styles/Uv_comunasdelproyecto_18_style.js"></script><script src="styles/CCU20237COMUNAS_19_style.js"></script><script src="styles/redvialproyecto_20_style.js"></script><script src="styles/LU7COMUNAS_21_style.js"></script><script src="styles/Uesgeomorfologicascomunas_22_style.js"></script><script src="styles/mapageologicocomunas_23_style.js"></script><script src="styles/Esteros_24_style.js"></script><script src="styles/CURSORIOACONCAGUA_25_style.js"></script><script src="styles/HumedalesUrbanosMMA2025_26_style.js"></script><script src="styles/Sitiosprioritarios2021proyecto_27_style.js"></script><script src="styles/PoligonosfinalesdePolpaico_28_style.js"></script><script src="styles/PrediosfinalesdePolpaico_29_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
